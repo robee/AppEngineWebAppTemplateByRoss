@@ -1,0 +1,72 @@
+<html>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript">
+	
+		function loadTemplateIntoContent(content)
+		{
+			 $('#content').load(content);
+		};
+		
+	</script>
+	<!-- Custom Javascript -->
+	<script language="javascript" src="js/customJS.js"></script>
+	<head>
+		
+		 <!-- Blueprint CSS -->
+    	<link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection">
+    	<link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print">
+		<link rel="stylesheet" href="/css/blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection" /> 
+		<link rel="stylesheet" href="/css/customCSS.css" type="text/css" media="screen, projection" /> 
+    	<!--[if lt IE 8]><link rel="stylesheet" href="/client/static/blueprint/css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+
+    <title>Seven Cubed Template App</title>
+	</head>
+	
+	<body>
+
+    <div class="container">
+	
+		<div id="header" class="prepend-top span-24 last">
+	 		<h2>SevenCubed Template App</h2>
+		</div> <!--header -->
+		
+		<div id="login" class="span-6 prepend-18 last">
+			{{LOGIN}}
+		</div>
+		
+		<!-- For Use With Horizontal Navigation-->
+		<div id="navHorizontal" class="span-24 last">
+			
+			<ul>
+				<li><a href="javascript:loadTemplateIntoContent('page1')">Page 1</a></li>
+				<li><a href="javascript:loadTemplateIntoContent('page2')">Page 2</a></li>
+			</ul>
+			
+		</div>
+		
+	    <div id="content" class="span-24 last">
+			{{CONTENT}}
+		</div> 
+
+		
+		<!-- For Use With Vertical Navigation-->
+		<!--
+		<div id="navVertical" class="span-8">
+			
+		</div>
+		
+	    <div id="body" class="span-16 last">
+			{{BODY}}
+		</div> 
+		-->
+		
+		<div id="footer" class="prepend-top span-24 last">
+			
+			<p> This Should be Fun </p>
+			
+		</div> 
+		
+    </div>
+  </body>
+</html>

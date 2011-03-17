@@ -1,0 +1,28 @@
+<div class="span-10 prepend-7" >
+	<h3>Users</h3>
+
+	<table>
+		<tr>
+			<td>Google User</td>
+			<td>First Name</td>
+			<td>Last Name</td>
+			
+		
+		</tr>
+		{% for saved_user in saved_users %}
+				
+		<tr>
+			<td >{{saved_user.google_user}}</td>
+  			<td>{{ saved_user.first_name }}</td>
+			<td>{{ saved_user.last_name }}</td>
+			
+			
+		
+			
+		</tr>
+		
+	    {% endfor %}
+	
+		
+	</table>
+</div>

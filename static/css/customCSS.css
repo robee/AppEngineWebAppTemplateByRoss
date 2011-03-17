@@ -1,0 +1,136 @@
+
+
+
+/*
+    This is the only CSS file that should be modified.  The CSS files in the framework cannot be modified.
+    When adding styles here be aware that margin, padding, width, and border styles may conflict with the existing framework.
+    If at all possible use the Framwork classes outlined in the BlueprintCSS cheat sheet to modify spacing.
+    It is preferable to add custom div ID styles so that the class fields can be used exlusivley for Blueprint CSS style classes.
+    This makes debugging of our own styles easier.
+
+*/
+
+
+/* Add Div IDs Here*/
+
+#header
+{
+   text-align:center;
+}
+
+#login
+{
+   
+}
+
+#content
+{
+   
+  
+}
+
+#footer
+{
+    text-align:center;
+}
+
+    
+}
+/* << ----------------// Horizontal navigation //---------------->> */
+#navHorizontal {
+   
+}
+
+#navHorizontal ul {
+    
+    list-style:none ;
+}
+
+#navHorizontal ul li {
+
+    display:inline;
+}
+
+#navHorizontal ul li a:hover {
+  color:#424242;
+}
+
+
+#navHorizontal ul li a:link, #navHorizontal ul li a:visited {
+
+    color:Black;
+    text-decoration:none;
+
+}
+
+#navHorizontal ul li a:hover, #navHorizontal ul li a:active {
+
+    
+    text-decoration:none;
+
+}
+
+
+/* << ----------------// Vertical navigation //---------------->> */
+#navVertical {
+
+
+}
+
+#navVertical ul {
+
+    list-style:none;
+}
+#navVertical ul li {
+    
+    list-style:none;
+
+}
+
+#navVertical ul li a:link, #navVertical ul li a:visited {
+
+    color: Black;
+    display:block;
+
+}
+
+#navVertical ul li a:hover, #navVertical ul li a:active {
+
+}
+
+/* Add Classes Here */
+
+/*These two classes can only be applied to divs*/
+
+/*takes up 2 spans */
+div.FullBorder 
+{
+    padding:4px 4px 4px 4px;
+    margin: 5px 5px 5px 5px;
+    border:1px solid #eee;
+}
+
+/*similar to colborder this takes of 1 span*/
+div.leftborder 
+{
+    padding-left:4px 4px 4px 4px;
+    margin-left: 5px 5px 5px 5px;
+    border-left:1px solid #eee;
+}
+
+
+/* Add Generic Style Rules Here*/
+
+body
+{
+  
+}
+
+a
+{
+	text-decoration:none;	
+}
+
+
+
+
